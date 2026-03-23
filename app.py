@@ -7,8 +7,8 @@ st.set_page_config(page_title="IPL 2025 Data Analysis", layout="wide")
 st.title("🏏 IPL 2025 Data Analysis")
 
 # ---------------- LOAD DATA ----------------
-bat = pd.read_csv("data/IPL2025Batters.csv")
-bowl = pd.read_csv("data/IPL2025Bowlers.csv")
+bat = pd.read_csv("IPL2025Batters.csv")
+bowl = pd.read_csv("IPL2025Bowlers.csv")
 
 # ---------------- CLEAN DATA ----------------
 bat.drop_duplicates(inplace=True)
